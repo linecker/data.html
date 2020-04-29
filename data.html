@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>data.html</title>
+
+<script language="JavaScript">
+function evalUserinput()
+{
+   var input = document.getElementById("userInput").value;
+   console.log(input);
+   console.log(eval(input));
+}
+</script>
+
+<style>
+   table {
+          border-collapse: collapse;
+   }
+   td {
+      border: 1px solid black;
+      padding: 3px;
+      margin: 0px;
+   }
+   tr, th {
+      border: 1px solid black;
+      margin: 0px;
+      padding: 3px;
+   }
+</style>
+
+</head>
+<body>
+<h1>table that is content-editable:</h1>
+<h2>recherche</h2>
+<li>
+<a href="https://www.reddit.com/r/programming/comments/olcn8/what_if_haskell_and_excel_had_a_lovechild/">
+https://www.reddit.com/r/programming/comments/olcn8/what_if_haskell_and_excel_had_a_lovechild/</a><br>
+</li>
+<li>https://jsfiddle.net/ondras/hYfN3/</li>
+<li>
+what are good javascript data structure for spreadsheet?
+</li>
+
+
+<h2>playground</h2>
+
+<textarea style="width:400px; height:300px; display:inline-block;">
+data;height(m);weight(kg)
+2018-02-13;1.76;78.4
+2018-02-14;1.76;78.2
+2018-02-15;1.76;78.3
+2018-02-16;1.76;78.2
+2018-02-17;1.76;78.8
+2018-02-18;1.76;78.7
+2018-02-19;1.76;78.9
+2018-02-20;1.76;78.7
+2018-02-21;1.76;78.3
+2018-02-22;1.76;78.1
+</textarea>
+
+<table style="border:1px solid black; display:inline-block; width:400px; height:300px;" contenteditable="true">
+   <tr>
+      <th>One</th>
+      <th>Two</th>
+   </tr>
+   <tr>
+      <td>1</td>
+      <td>6</td>
+   </tr>
+   <tr>
+      <td>2</td>
+      <td>7</td>
+   </tr>
+   <tr>
+      <td>3</td>
+      <td>8</td>
+   </tr>
+   <tr>
+      <td>4</td>
+      <td>9</td>
+   </tr>
+   <tr>
+      <td>5</td>
+      <td>10</td>
+   </tr>
+</table>
+
+<h2>eval</h2>
+<input type="text" id="userInput"></input>
+<input type="button" value="Eval" onClick="javascript:evalUserinput()"></input>
+
+</body>
+</html>
